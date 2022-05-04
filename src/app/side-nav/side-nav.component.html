@@ -1,0 +1,17 @@
+<mat-drawer-container class="" autosize>
+  <mat-drawer #drawer 
+  class="h-[100vh] bg-brand-900" 
+  mode="side">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+  
+  <div>
+    <button
+      class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md " 
+      type="button"  (click)="drawer.toggle()">
+      <i class="ph-list"></i>
+    </button>
+  </div>
+
+</mat-drawer-container>
+

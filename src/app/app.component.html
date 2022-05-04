@@ -1,1 +1,21 @@
-<app-home></app-home>
+<mat-drawer-container class="bg-brand-100 h-full"  autosize>
+    <mat-drawer #drawer 
+    class="min-w-2 h-[100vh] bg-brand-900 text-brand-100" 
+    mode="over">
+      <div class="min-w-[100px] py-5 px-2">
+        <p>testafgdsgdgfgdfggggdfgdgdfgfg</p>
+      </div>
+    </mat-drawer>
+  <!-- </mat-drawer-container>
+  <mat-drawer-container class="w-12 h-12 absolute top-2 left-2 bg-transparent"> -->
+    
+    <div>
+      <button
+        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-2 left-2" 
+        type="button"  (click)="drawer.toggle()">
+        <i class="ph-list"></i>
+      </button>
+      
+      <app-home></app-home>
+    </div>  
+</mat-drawer-container>  
