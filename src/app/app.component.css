@@ -1,0 +1,23 @@
+.links a{
+  @apply flex flex-row items-center text-xl my-2 hover:text-brand-500
+}
+.links a i{
+  @apply text-xl mr-2 
+}
+
+.conteudo-principal{
+  @apply h-[100vh] px-20 py-14
+}
+
+/* tablet */
+@media (max-width:700px) {
+  .conteudo-principal{
+    @apply px-10
+  }
+}
+/* celular grande */
+@media (max-width:400px) {
+  .conteudo-principal{
+    @apply px-5
+  }
+}

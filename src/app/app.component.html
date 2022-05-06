@@ -1,9 +1,41 @@
 <mat-drawer-container class="bg-brand-100 h-full"  autosize>
     <mat-drawer #drawer 
-    class="min-w-2 h-[100vh] bg-brand-900 text-brand-100" 
+    class="min-w-2 h-[100vh] bg-brand-900 text-brand-100 px-3" 
     mode="over">
       <div class="min-w-[100px] py-5 px-2">
-        <p>testafgdsgdgfgdfggggdfgdgdfgfg</p>
+        <h1 class="text-center" style="cursor: pointer;" routerLink="">logo</h1>
+        <!-- links -->
+        <div class="links flex flex-col">
+          <a routerLink="/docs">
+            <i class="ph-identification-badge"></i>
+            <span>Documentos</span>
+          </a>
+          <a routerLink="/habit">
+            <i class="ph-house"></i>
+            <span>moradia</span>
+          </a>
+          <a routerLink="">
+            <i class="ph-books"></i>
+            <span>educação</span>
+          </a>
+          <a routerLink="">
+            <i class="ph-first-aid"></i>
+            <span>saude</span>
+          </a>
+          <a routerLink="">
+            <i class="ph-briefcase"></i>
+            <span>emprego</span>
+          </a>
+          <a routerLink="">
+            <i class="ph-smiley"></i>
+            <span>xxxxxxx</span>
+          </a>
+          <a routerLink="">
+            <i class="ph-clipboard"></i>
+            <span>Cadastro</span>
+          </a>
+        </div>
+        <!-- links -->
       </div>
     </mat-drawer>
   <!-- </mat-drawer-container>
@@ -16,6 +48,9 @@
         <i class="ph-list"></i>
       </button>
       
-      <app-home></app-home>
+      <div class="conteudo-principal">
+        <router-outlet></router-outlet>
+      </div>
+
     </div>  
 </mat-drawer-container>  
