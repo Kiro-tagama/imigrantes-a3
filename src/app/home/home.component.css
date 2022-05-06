@@ -51,12 +51,12 @@
     justify-content: center;
     align-items: center;
   }
-  /* .ci1:hover,
+  .ci1:hover,
   .ci3:hover,
   .ci5:hover,
   .ci7:hover{
-    
-  } */
+    margin-right: 170px !important;
+  }
   .ci1,.ci3,.ci5,.ci7{
     margin-right: 150px;
   }

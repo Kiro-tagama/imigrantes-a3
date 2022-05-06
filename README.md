@@ -2,6 +2,11 @@
 
 # https://projeto-a3-usjt-rodriogo.netlify.app/
 
+### falta
+  - conteudo
+  - icones da home
+  - arrumar a nav 
+  - backend 
 ### using 
  - Phosphor (icons)
  - Tailwind (css)
