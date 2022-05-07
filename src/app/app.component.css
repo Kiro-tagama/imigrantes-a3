@@ -1,17 +1,17 @@
 .links a{
-  @apply flex flex-row items-center text-xl my-2 hover:text-brand-500 p-2 rounded-md border-2 border-transparent hover:border-brand-500
+  @apply flex flex-row items-center text-xl my-1 hover:text-brand-500 px-2 py-1 rounded-md border-2 border-transparent hover:border-brand-500
 }
 .links a i{
   @apply text-xl mr-2 
 }
 
-a:focus{
+.nav a:focus{
   @apply outline-none ring-2 ring-brand-500 ring-offset-0
   
 }
 
 .config-pd{
-  @apply h-[100vh] px-20 py-14
+  @apply h-[100vh] px-20 py-16
 }
 
 /* tablet */

@@ -61,3 +61,8 @@ i{@apply text-[3.6rem] mx-auto }
 .hexIten:hover .hexCenter div{
   zoom: 1.05;
 }
+
+.hexIten:focus .hexBorder div{
+  border-color: #1b98e0;
+  background-color: #1b98e0;
+}

@@ -2,8 +2,8 @@
     <mat-drawer #drawer 
     class="min-w-2 h-[100vh] bg-brand-900 text-brand-100 px-3" 
     mode="over">
-      <div class="min-w-[100px] py-5 px-2">
-        <div class="text-center my-2">
+      <div class="nav min-w-[100px] py-5 px-2">
+        <div class="text-center mt-2 mb-4">
           <a routerLink="" class="text-3xl rounded-md p-2">logo</a>
         </div>
         <!-- links -->
@@ -38,6 +38,7 @@
           </a>
         </div>
         <!-- links -->
+        <div id="google_translate_element" class="absolute bottom-5 p-2 bg-brand-100 border-2 rounded-md border-brand-900"></div>
       </div>
     </mat-drawer>
   <!-- </mat-drawer-container>
@@ -45,12 +46,12 @@
 
     <div>
       <button
-        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-10 left-5 focus:outline-none focus:ring-4 focus:ring-brand-500 focus:ring-offset-0" 
+        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-4 left-5 focus:outline-none focus:ring-4 focus:ring-brand-500 focus:ring-offset-0" 
         type="button"  (click)="drawer.toggle()">
         <i class="ph-list"></i>
       </button>
 
-      <div id="google_translate_element" class="fixed top-2 right-2 p-2 bg-brand-100 border-2 rounded-md border-brand-900"></div>
+      
       
       <div class="h-[100vh]">
         <router-outlet></router-outlet>
