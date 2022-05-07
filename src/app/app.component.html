@@ -3,7 +3,9 @@
     class="min-w-2 h-[100vh] bg-brand-900 text-brand-100 px-3" 
     mode="over">
       <div class="min-w-[100px] py-5 px-2">
-        <h1 class="text-center" style="cursor: pointer;" routerLink="">logo</h1>
+        <div class="text-center my-2">
+          <a routerLink="" class="text-3xl rounded-md p-2">logo</a>
+        </div>
         <!-- links -->
         <div class="links flex flex-col">
           <a routerLink="/docs">
@@ -14,23 +16,23 @@
             <i class="ph-house"></i>
             <span>moradia</span>
           </a>
-          <a routerLink="">
+          <a routerLink="/educ">
             <i class="ph-books"></i>
             <span>educação</span>
           </a>
-          <a routerLink="">
+          <a routerLink="/health">
             <i class="ph-first-aid"></i>
-            <span>saude</span>
+            <span>saúde</span>
           </a>
-          <a routerLink="">
+          <a routerLink="/job">
             <i class="ph-briefcase"></i>
             <span>emprego</span>
           </a>
-          <a routerLink="">
+          <a routerLink="/undf">
             <i class="ph-smiley"></i>
             <span>xxxxxxx</span>
           </a>
-          <a routerLink="">
+          <a routerLink="/form">
             <i class="ph-clipboard"></i>
             <span>Cadastro</span>
           </a>
@@ -40,15 +42,17 @@
     </mat-drawer>
   <!-- </mat-drawer-container>
   <mat-drawer-container class="w-12 h-12 absolute top-2 left-2 bg-transparent"> -->
-    
+
     <div>
       <button
-        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-2 left-2" 
+        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-10 left-5 focus:outline-none focus:ring-4 focus:ring-brand-500 focus:ring-offset-0" 
         type="button"  (click)="drawer.toggle()">
         <i class="ph-list"></i>
       </button>
+
+      <div id="google_translate_element" class="fixed top-2 right-2 p-2 bg-brand-100 border-2 rounded-md border-brand-900"></div>
       
-      <div class="conteudo-principal">
+      <div class="h-[100vh]">
         <router-outlet></router-outlet>
       </div>
 

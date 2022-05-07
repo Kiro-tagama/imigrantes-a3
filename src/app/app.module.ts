@@ -11,6 +11,11 @@ import { PolygonComponent } from './home/polygon/polygon.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
 import { HabitationComponent } from './pages/habitation/habitation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EducationComponent } from './pages/education/education.component';
+import { HealthComponent } from './pages/health/health.component';
+import { JobsComponent } from './pages/jobs/jobs.component';
+import { UndefinedPageComponent } from './pages/undefined-page/undefined-page.component';
+import { FormComponent } from './pages/form/form.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PolygonComponent,
     DocumentationComponent,
     HabitationComponent,
+    EducationComponent,
+    HealthComponent,
+    JobsComponent,
+    UndefinedPageComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
