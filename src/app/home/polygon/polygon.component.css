@@ -1,4 +1,9 @@
-i{@apply text-[3.6rem] mx-auto }
+i{
+  @apply text-[3.6rem] mx-auto
+}
+p{
+  @apply text-center text-2xl m-0
+}
 
 .hexIten {
   margin: 20px;
@@ -49,9 +54,6 @@ i{@apply text-[3.6rem] mx-auto }
 }
 .c3{
   transform: rotate(-60deg);
-}
-.c2 p{
-  text-align: center;
 }
 .hexIten:hover .hexBorder div{
   border-color: #1b98e0;

@@ -2,35 +2,36 @@
 
   <div class="flex flex-col justify-center items-center my-auto ">
     <div class="p-2">
-      <h1 class="text-center">nome logo</h1>
+      <h1 class="text-center">Imigrantes</h1>
       <p class="text-md mx-3">desc: Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
     </div>
     <div class="colmeia">
       <div class="cm1"> 
         <a class="ci1" routerLink="/docs">
-          <app-polygon></app-polygon>
+          <app-polygon [title]="Documentos" [outerText]="iconDoc"></app-polygon>
         </a>
         <a class="ci2" routerLink="/habit">
-          <app-polygon></app-polygon>
+          <app-polygon [title]="Moradia" [outerText]="iconHabit"></app-polygon>
         </a>
         <a class="ci3" routerLink="/educ">
-          <app-polygon></app-polygon>
+          <app-polygon [title]="Educacao" [outerText]="iconEduc"></app-polygon>
         </a>
       </div>
       <br>
       <div class="cm2 ">
         <a class="ci4" routerLink="/health">
-          <app-polygon></app-polygon>
+          <app-polygon [title]="Saude" [outerText]="iconHealth"></app-polygon>
         </a>
         <a class="ci5" routerLink="/job">
-          <app-polygon></app-polygon>
+          <app-polygon [title]="Emprego" [outerText]="iconJob"></app-polygon>
         </a>
-        <a class="ci6" routerLink="/undf">
-          <app-polygon></app-polygon>
+        <a class="ci6" routerLink="/form">
+          <app-polygon [title]="Cadastro" [outerText]="iconForm"></app-polygon>
         </a>
-        <a class="ci7" routerLink="/form">
-          <app-polygon></app-polygon>
+        <a class="ci7" routerLink="/undf" >
+          <app-polygon [title]="Undf" [outerText]="iconUndf"></app-polygon>
         </a>
+        
       </div>
       
 

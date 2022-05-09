@@ -7,7 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HomeComponent implements OnInit {
-  
+  //title
+  Documentos:string='Documentos'
+  Moradia:string='Moradia'
+  Educacao:string='Educação'
+  Saude:string='Saúde'
+  Emprego:string='Emprego'
+  Undf:string='Undf'
+  Cadastro:string='Cadastro'
+
+  //icons
+  iconDoc:string='ph-identification-badge'
+  iconHabit:string='ph-house'
+  iconEduc:string='ph-books'
+  iconHealth:string='ph-first-aid'
+  iconJob:string='ph-briefcase'
+  iconUndf:string='ph-smiley'
+  iconForm:string='ph-clipboard'
+            
+
   constructor() { }
 
   ngOnInit(): void {
