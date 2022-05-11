@@ -5,10 +5,10 @@
   @apply text-xl mr-2 
 }
 
-.nav a:focus{
+/* .nav a:focus{
   @apply outline-none ring-2 ring-brand-500 ring-offset-0
   
-}
+} */
 
 .config-pd{
   @apply h-[100vh] px-20 py-16
