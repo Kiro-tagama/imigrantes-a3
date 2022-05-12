@@ -22,7 +22,6 @@ const routes: Routes = [
   {path:'undf',component:UndefinedPageComponent},
 ];
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

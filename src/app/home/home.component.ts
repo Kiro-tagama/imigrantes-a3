@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   Educacao:string='Educação'
   Saude:string='Saúde'
   Emprego:string='Emprego'
-  Undf:string='Undf'
+  Undf:string='Chip'
   Cadastro:string='Cadastro'
 
   //icons
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   iconEduc:string='ph-books'
   iconHealth:string='ph-first-aid'
   iconJob:string='ph-briefcase'
-  iconUndf:string='ph-smiley'
+  iconUndf:string='ph-sim-card'
   iconForm:string='ph-clipboard'
             
 

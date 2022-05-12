@@ -4,7 +4,7 @@ img{
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  opacity: .4;
+  opacity: .5;
   object-fit: cover;
 }
 
