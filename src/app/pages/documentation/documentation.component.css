@@ -1,3 +1,5 @@
+
+
 mat-expansion-panel{
   background-color: transparent;
   box-shadow: none !important;
@@ -10,8 +12,14 @@ mat-expansion-panel{
   justify-content: space-between;
   align-items: center;
 }
+.titulo{
+  @apply text-brand-900
+}
 .titulo h2,p{
   margin: 0;
+}
+.titulo h2{
+  font-weight: bold;
 }
 hr{
   @apply my-2 h-0.5 bg-brand-900
