@@ -1,6 +1,6 @@
 <mat-drawer-container class="bg-brand-100 h-full"  autosize>
     <mat-drawer #drawer 
-    class="min-w-2 h-[100vh] bg-brand-900 text-brand-100 px-3" 
+    class="min-w-2 h-[100vh] bg-brand-900 text-brand-100 px-3 flex flex-col justify-center" 
     mode="over">
       <div class="nav min-w-[100px] py-5 px-2">
         <div class="text-center">
@@ -46,15 +46,15 @@
           </a>
         </div>
         <!-- links -->
-        <div id="google_translate_element" class="absolute bottom-10 left-5 p-2 bg-brand-100 border-2 rounded-md border-brand-900"></div>
+        <div id="google_translate_element" class="p-2 bg-brand-100 border-2 rounded-md border-brand-900"></div>
       </div>
     </mat-drawer>
   <!-- </mat-drawer-container>
   <mat-drawer-container class="w-12 h-12 absolute top-2 left-2 bg-transparent"> -->
 
-    <div>
+    <div >
       <button
-        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-4 left-5 focus:outline-none focus:ring-4 focus:ring-brand-500 focus:ring-offset-0" 
+        class="w-12 h-12 bg-brand-900 text-brand-100 p-2 text-3xl rounded-md fixed top-10 left-5 focus:outline-none focus:ring-4 focus:ring-brand-500 focus:ring-offset-0" 
         type="button"  (click)="drawer.toggle()">
         <i class="ph-list"></i>
       </button>

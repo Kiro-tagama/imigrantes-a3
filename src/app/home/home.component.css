@@ -6,6 +6,7 @@ img{
   z-index: -1;
   opacity: .5;
   object-fit: cover;
+  overflow: hidden;
 }
 
 h1{
