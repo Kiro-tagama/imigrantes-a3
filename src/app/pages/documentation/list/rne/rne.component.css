@@ -1,0 +1,11 @@
+.box{
+  @apply p-5 rounded-lg bg-[#f4f7f8] my-2
+}
+
+h3{
+  @apply font-bold mb-2 mt-4
+}
+
+.box .list1 li{
+ @apply my-2
+}

@@ -1,0 +1,28 @@
+mat-expansion-panel{
+  background-color: transparent;
+  box-shadow: none !important;
+}
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+.titulo h2,p{
+  margin: 0;
+}
+hr{
+  @apply my-2 h-0.5 bg-brand-900
+}
+@media (max-width:700px) {
+  h1{text-align: center;}
+}
+@media (max-width:540px) {
+
+  mat-expansion-panel-header{
+    @apply h-32 mt-4 mb-4
+  }
+  
+}

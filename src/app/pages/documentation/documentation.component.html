@@ -1,4 +1,61 @@
-<div class="config-pd">
-  <h1>documentos</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nostrum iusto, iste dicta doloremque labore vel aliquam ullam at quam quas! Id ipsum asperiores, unde culpa magnam eligendi enim eos.</p>
+<div class="config-pd text-brand-900">
+  <h1>Documentos</h1>
+  <p class="p-5 rounded-lg bg-[#f4f7f8]" style="margin-bottom:.5rem;">
+    Os refugiados reconhecidos no Brasil têm direito de obter o Registro Nacional de Estrangeiros (RNE), documento de identidade dos estrangeiros no Brasil; uma Carteira de Trabalho e Previdência Social definitiva (CTPS); um número de Cadastro de Pessoa Física (CPF) e um documento de viagem.
+
+    Se algum dos seus documentos não for aceito por alguma instituição pública ou privada, você pode entrar em contato e solicitar o apoio da Defensoria Pública da União, do ACNUR ou das organizações da sociedade civil que trabalham com refugiados - Associação Antônio Vieira (ASAV), Caritas Arquidiocesana do Rio de Janeiro (CARJ), Caritas Arquidiocesana de São Paulo (CASP), Centro de Defesa dos Direitos Humanos de Guarulhos (CDDH) e Instituto Migrações e Direitos Humanos (IMDH).
+  </p>
+
+
+  <!-- lista -->
+  <mat-accordion class="example-headers-align">
+    
+    <mat-expansion-panel  hideToggle>
+      <mat-expansion-panel-header class="py-2 h-20">
+        <mat-panel-title class="flex flex-row justify-between">
+          <div class="titulo">
+            <h2>Registro Nacional de Estrangeiros (RNE)</h2>
+            <p>Onde posso renovar ou solicitar pela primeira vez o RNE?</p> 
+          </div>
+          <mat-icon class="mt-[5px]" >
+            <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
+            </svg>
+          </mat-icon>
+        </mat-panel-title>
+        
+      </mat-expansion-panel-header>
+
+      <div>
+        <app-rne></app-rne>
+      </div>
+    </mat-expansion-panel>
+    
+    <hr>
+
+    <mat-expansion-panel  hideToggle>
+      <mat-expansion-panel-header class="py-2 h-20">
+        <mat-panel-title class="flex flex-row justify-between">
+          <div class="titulo">
+            <h2>Cadastro de Pessoa Física (CPF)
+            </h2>
+            <p>Onde posso solicitar o CPF?</p> 
+          </div>
+          <mat-icon class="mt-[5px]" >
+            <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
+            </svg>
+          </mat-icon>
+        </mat-panel-title>
+        
+      </mat-expansion-panel-header>
+
+      <div>
+        <app-cpf></app-cpf>
+      </div>
+    </mat-expansion-panel>
+
+    <hr>
+
+  </mat-accordion>
 </div>

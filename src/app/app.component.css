@@ -11,7 +11,7 @@
 } */
 
 .config-pd{
-  @apply h-[100vh] px-20 py-16
+  @apply h-[100vh] px-20 py-16 text-brand-900
 }
 
 
