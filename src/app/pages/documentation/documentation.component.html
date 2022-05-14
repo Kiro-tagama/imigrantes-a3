@@ -23,14 +23,14 @@
   <!-- lista -->
   <mat-accordion class="example-headers-align">
     
-    <mat-expansion-panel  hideToggle>
+    <mat-expansion-panel  hideToggle (click)="toggleList(1)">
       <mat-expansion-panel-header class="py-2 h-20">
         <mat-panel-title class="flex flex-row justify-between">
           <div class="titulo">
             <h2>Registro Nacional de Estrangeiros (RNE)</h2>
             <p>Onde posso renovar ou solicitar pela primeira vez o RNE?</p> 
           </div>
-          <mat-icon class="mt-[5px]" >
+          <mat-icon class="mt-[5px]" [@openClose]="listOpen ? 'open' : 'close' " >
             <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
             </svg>
@@ -46,7 +46,7 @@
     
     <hr>
 
-    <mat-expansion-panel  hideToggle>
+    <mat-expansion-panel  hideToggle (click)="toggleList(2)">
       <mat-expansion-panel-header class="py-2 h-20">
         <mat-panel-title class="flex flex-row justify-between">
           <div class="titulo">
@@ -54,7 +54,7 @@
             </h2>
             <p>Onde posso solicitar o CPF?</p> 
           </div>
-          <mat-icon class="mt-[5px]" >
+          <mat-icon class="mt-[5px]" [@openClose]="listOpen ? 'open' : 'close' ">
             <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
             </svg>

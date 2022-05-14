@@ -7,6 +7,7 @@ img{
   opacity: .5;
   object-fit: cover;
   overflow: hidden;
+  bottom: 0;
 }
 
 h1{
@@ -50,6 +51,8 @@ a{
   @apply outline-8 outline-brand-500 outline-offset-8
 } 
 
+.base{height: 76vh;}
+
 @media (max-width:885px) {
   /* abaixo de 885 */
   .colmeia{zoom: .8;}
@@ -57,6 +60,7 @@ a{
 @media (max-width:670px) {
   /* abaixo de 670 */
   /* .colmeia{zoom: 1;} */
+  .base{height: auto;}
   .colmeia{
     width: auto;
     height: auto;
