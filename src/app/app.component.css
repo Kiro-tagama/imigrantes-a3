@@ -1,3 +1,4 @@
+nav{z-index: 100;}
 .links a{
   @apply flex flex-row items-center text-xl my-1 hover:text-brand-500 px-2 py-1 rounded-md border-2 border-transparent hover:border-brand-500
 }
@@ -11,7 +12,7 @@
 } */
 
 .config-pd{
-  @apply h-[100vh] px-20 py-16 text-brand-900
+  @apply h-[100vh] px-20 py-20 text-brand-900
 }
 
 
