@@ -14,7 +14,3 @@ h3 svg {margin-right: 10px;width: 47px;}
 li{
   @apply my-2
 }
-
-.etapa h3{
-  @apply mt-0
-}
