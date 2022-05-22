@@ -10,3 +10,11 @@ h3{
   @apply font-bold mb-2 mt-4 flex flex-row items-center
 }
 h3 svg {margin-right: 10px;width: 47px;}
+
+li{
+  @apply my-2
+}
+
+.etapa h3{
+  @apply mt-0
+}
