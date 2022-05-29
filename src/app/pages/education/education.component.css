@@ -1,0 +1,41 @@
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
+mat-expansion-panel{
+  background-color: transparent;
+  box-shadow: none !important;
+}
+hr{
+  @apply my-2 h-0.5 bg-brand-900
+}
+.sistemaS{
+ @apply flex flex-row justify-evenly mt-2
+}
+.sistemaS a{
+  @apply border-2 border-brand-700 rounded-lg p-2 hover:bg-brand-700 hover:bg-opacity-20 w-16 text-center font-bold 
+}
+
+.box{
+  @apply p-5 rounded-lg bg-[#f4f7f8] my-2
+}
+
+.areaCards{
+  @apply grid grid-cols-2 grid-flow-row gap-2 justify-items-center
+}
+.card{
+  @apply p-5 rounded-lg bg-[#f4f7f8] flex flex-col justify-between
+}
+
+.card h3{
+  @apply font-bold text-center text-xl
+}
+.card a{
+  @apply bg-brand-900 text-brand-100 text-center font-medium text-base p-2 rounded-lg hover:bg-brand-500 hover:text-brand-900
+}
+
+@media (max-width:640px) {
+  .areaCards{
+    @apply flex flex-col items-center
+  }
+}

@@ -1,3 +1,150 @@
 <div class="config-pd">
-  <p>education works!</p>
+  <div>
+    <!-- icone -->
+    <h1>Educação</h1>
+  </div>
+
+  <div class="box">
+    <p>
+    Refugiados e Solicitantes de Refúgio têm o direito à Educação de acordo com a Lei 9.474/1997 – Estatuto dos Refugiados. O sistema educacional brasileiro inclui diversos níveis:
+    </p>
+      <ul style="list-style-type:disc;list-style-position:inside;">
+        <li>Ensino básico para crianças de 0 a 17 anos (Creche, Ensino Fundamental e Ensino Médio);</li>
+        <li>Ensino básico para jovens e adultos (maiores de 18 anos);</li>
+        <li>Ensino técnico;</li>
+        <li>Ensino universitário.</li>
+      </ul>
+    <br>
+    <p>Além disso, pessoas refugiadas e solicitantes de refúgio com diplomas universitários podem revalidar seus diplomas</p>
+    <p>O calendário escolar no Brasil tem início em fevereiro e termina em dezembro. No mês de julho há também um recesso mais curto, variando de 2 a 3 semanas. Todas as crianças e adolescentes têm direito a se matricular gratuitamente nas escolas públicas de ensino fundamental e médio, inclusive os solicitantes de refúgio e refugiados. A lei brasileira de refúgio garante que as autoridades brasileiras levarão em consideração a situação excepcional em que se encontram os refugiados no Brasil e, por isso, facilitarão o ingresso em instituições de ensino daqueles que não possuam seus diplomas ou histórico escolar. Sendo assim, toda criança ou adolescente <b>solicitante de refúgio ou refugiado tem o direito de se matricular em qualquer escola pública apresentando o seu CPF e protocolo provisório ou RNE.</b>
+    </p>
+  </div>
+
+  <h2>
+    <!-- icone -->
+    Aulas de português
+  </h2>
+  <div class="box">
+    Visando à plena integração social e econômica de imigrantes, instituições proporcionam cursos de português proporcionando mais autonomia, facilitando a integração local e a conquista de um emprego.Devido à alta procura por esses cursos, alguns deles podem ter listas de espera.
+  </div>
+  <div>
+    <mat-accordion class="example-headers-align">
+    
+      <mat-expansion-panel  hideToggle >
+        <mat-expansion-panel-header class="py-2 h-20">
+          <mat-panel-title class="flex flex-row justify-between">
+            <div class="titulo">
+               <h2>
+                Cursos online
+              </h2>
+            </div>
+            <mat-icon class="mt-[5px]">
+              <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
+              </svg>
+            </mat-icon>
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+  
+        <div>
+          <div class="areaCards">
+            <!-- card -->
+            <div class="card min-w-[200px] max-w-sm" *ngFor="let item of cursosOnline">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.title}}</h3>
+                <p>{{item.desc}}</p>
+              </div>
+              <a href={{item.linkTo}} >
+                Veja
+              </a>
+            </div>
+            <!-- card -->
+          </div>
+        </div>
+      </mat-expansion-panel>
+      
+      <hr>
+       <!-- esse -->
+      <mat-expansion-panel  hideToggle >
+        <mat-expansion-panel-header class="py-2 h-20">
+          <mat-panel-title class="flex flex-row justify-between">
+            <div class="titulo">
+               
+            </div>
+            <mat-icon class="mt-[5px]">
+              <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
+              </svg>
+            </mat-icon>
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+  
+        <div>
+          
+        </div>
+      </mat-expansion-panel>
+      
+      <hr>
+
+      <mat-expansion-panel  hideToggle >
+        <mat-expansion-panel-header class="py-2 h-20">
+          <mat-panel-title class="flex flex-row justify-between">
+            <div class="titulo">
+               <h2>
+                Cursos profissionalizantes
+              </h2>
+            </div>
+            <mat-icon class="mt-[5px]">
+              <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.95892 2.2615L15.5075 21.2043L27.1301 2.30684L3.95892 2.2615Z" stroke="#13293D" stroke-width="4"/>
+              </svg>
+            </mat-icon>
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+  
+        <div>
+          <div class="box">
+            Os refugiados também podem se matricular em <b>cursos técnicos e profissionalizantes</b> que são disponibilizados, mediante pagamento de taxas, através das instituições do Governo ligadas ao Pronatec ou ao Sistema S (SESI, SESC, SENAC, SENAI), dentre outras.
+            <div class="sistemaS">
+              <a href="https://www.portaldaindustria.com.br/sesi/canais/sesi-viva-mais/sesi-cursos/">SESI</a>
+              <a href="https://portalead.sp.senai.br/institucional/3722/3840/cursos-gratuitos">SENAI</a>
+              <a href="https://ead.sesc.digital/">SESC</a>
+              <a href="https://www.sp.senac.br/cursos-livres#">SENAC</a>
+            </div>
+          </div>
+          <div class="areaCards">
+            <div class="card" *ngFor="let item of cursosProfis" style="width:100% ;min-width:auto;max-width:auto">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.title}}</h3>
+                <p>{{item.desc}}</p>
+              </div>
+              <a href={{item.linkTo}} >
+                Veja
+              </a>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+    
+    
+    <h2>
+      Cursos presenciais
+    </h2>
+    <div class="areaCards">
+      <!-- <a href="mailto:caritassp@caritassp.org.br">Send email</a> -->
+      
+    </div>
+
+    
+    
+  </div>
+
+
 </div>

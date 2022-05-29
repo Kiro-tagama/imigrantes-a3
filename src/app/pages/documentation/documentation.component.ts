@@ -36,7 +36,7 @@ export class DocumentationComponent implements OnInit {
   listOpen = false;
 
   toggleList(x:any){
-    this.listOpen = !this.listOpen
+    // this.listOpen = !this.listOpen
   }
   
   constructor() { }
