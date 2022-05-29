@@ -1,4 +1,7 @@
-
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
 mat-expansion-panel{
   background-color: transparent;
   box-shadow: none !important;
