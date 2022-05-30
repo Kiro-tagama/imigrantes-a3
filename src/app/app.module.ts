@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -55,6 +56,7 @@ import { FormComponent } from './pages/form/form.component';
     RpComponent,
   ],
   imports: [
+    NgForm,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

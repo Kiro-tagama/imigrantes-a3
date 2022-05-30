@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -21,7 +22,16 @@ export class FormComponent implements OnInit {
     )
     form.resetForm()
 
-    
+    adicionarCliente(nome:string,fone:string,email:string){
+      const cliente: Cliente={
+        nome: nome,
+        fone: fone,
+        email: email,
+        id: ""
+      }
+    }
+
+
     // const cliente:Cliente={
     //   nome:form.value.nome,
     //   fone:form.value.fone,
