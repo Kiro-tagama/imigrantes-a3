@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -34,6 +34,7 @@ import { HealthComponent } from './pages/health/health.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
 import { UndefinedPageComponent } from './pages/undefined-page/undefined-page.component';
 import { FormComponent } from './pages/form/form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { FormComponent } from './pages/form/form.component';
     RpComponent,
   ],
   imports: [
-    NgForm,
+    HttpClientModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

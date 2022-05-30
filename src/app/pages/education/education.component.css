@@ -2,9 +2,13 @@ h1{
   font-weight: bold;
   font-size: 2rem;
 }
+.titulo h2{margin: 0;}
 mat-expansion-panel{
   background-color: transparent;
   box-shadow: none !important;
+}
+img{
+  @apply w-full h-auto
 }
 hr{
   @apply my-2 h-0.5 bg-brand-900

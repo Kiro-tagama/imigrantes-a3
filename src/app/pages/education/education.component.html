@@ -52,7 +52,7 @@
             <!-- card -->
             <div class="card min-w-[200px] max-w-sm" *ngFor="let item of cursosOnline">
               <div>
-                <img src={{item.img}} alt="" srcset="">
+                <img src={{item.img}} alt="">
                 <h3>{{item.title}}</h3>
                 <p>{{item.desc}}</p>
               </div>
@@ -137,8 +137,26 @@
     <h2>
       Cursos presenciais
     </h2>
-    <div class="areaCards">
+    <div class="">
       <!-- <a href="mailto:caritassp@caritassp.org.br">Send email</a> -->
+      
+      <div>
+        <h2>
+        SÃO PAULO
+        </h2>
+        <div class="areaCards">
+          <div class="card" *ngFor="let item of sp" style="width:100% ;min-width:auto;max-width:auto">
+            <div>
+              <img src={{item.img}} alt="" srcset="">
+              <h3>{{item.title}}</h3>
+              <p>{{item.desc}}</p>
+            </div>
+            <a href={{item.linkTo}} >
+              Veja
+            </a>
+          </div>
+        </div>
+      </div>
       
     </div>
 

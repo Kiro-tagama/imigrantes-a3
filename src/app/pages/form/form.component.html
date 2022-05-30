@@ -9,20 +9,44 @@
     <form (submit)="onAdicionarCliente(clienteForm)" #clienteForm="ngForm">
       <label for="">Nome</label>
       <input type="text" placeholder="Nome" name='nome' ngModel #nome="ngModel">
-
+      <br>
       <label for="">Email</label>
-      <input type="email" placeholder="Email" name='email' ngModel #email="ngModel">
-
+      <input type="email" placeholder="nome@exemplo.com" name='email' ngModel #email="ngModel">
+      <br>
       <label for="">Telefone</label>
-      <input type="tel" placeholder="Telefone" name='tel' ngModel #tel="ngModel">
-
+      <input type="tel" placeholder="11900000000" name='fone' ngModel #fone="ngModel">
+      <br>
       <label for="">Nacionalidade</label>
+      <input name="nacionalidade" ngModel #nacionalidade="ngModel" id="nacionalidade" list="text">
+      <br>
+      <!-- <label for="">Nacionalidade</label>
       <input type="text" placeholder="Nacionalidade" name='nacionalidade' ngModel #nacionalidade="ngModel">
+      -->
+      <label for="">Dificuldade em</label>
+      <input name="dific" ngModel #dific="ngModel" id="Dific" list="dific">
+      <br>
 
       <label for="">Diga-me mais sobre ti</label>
-      <input type="text" placeholder="digite aqui..." name='desc' ngModel #desc="ngModel">
+      <input type="text" placeholder="digite aqui..." name='desc' ngModel #desc="ngModel"> 
+      <br>
 
       <button type="submit">Enviar</button>
     </form>
+    
   </div>
 </div>
+
+<datalist id="text" >
+  <option *ngFor="let item of paises">
+    {{item.nome_pais}}
+  </option>
+  <!-- <option>Red</option>
+  <option>Yellow</option> 
+  <option>Blue</option> -->
+</datalist>
+
+<datalist id="dific" >
+  <option *ngFor="let item of temas">
+    {{item.nome}}
+  </option>
+</datalist>

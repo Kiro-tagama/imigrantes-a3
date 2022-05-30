@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css','../../app.component.css']
 })
 export class EducationComponent implements OnInit {
+  img='../../../assets/img/imgEduc/'
+
   cursosOnline=[
     { 
       img:"",
@@ -14,7 +15,7 @@ export class EducationComponent implements OnInit {
       linkTo:"https://www.fluencytv.com/cursodeportugues"
     },
     { 
-      img:"",
+      img:this.img+"image11.png",
       title:"Adus",
       desc:"O Adus oferece cursos gratuitos de português no Youtube: ",
       linkTo:"https://www.youtube.com/playlist?list=PL-BWXjFiBucMrxY38olzYNzx-OCMNcU33"
@@ -34,22 +35,32 @@ export class EducationComponent implements OnInit {
     
   ]
 
-  cursosPresenciais=[
+  
+  sp=[
     {
-      id:'SÃO PAULO',
-      cursos:[
-        {
-          img:"",
-          title:"Adus",
-          desc:"O Adus oferece cursos de portugês, capacitação e geração de renda e presta orientação jurídica.O atendimento da orientação jurídica é prestado pessoalmente e via e-mail e as situações que necessitem de litígios administrativos ou judiciais são encaminhadas para órgão públicos e instituições privadas adequadas para a proteção do direito eventualmente violado.                                  Para realizar o agendamento da aulas em São Paulo ou marcar atendimento online (outras cidades), acesse o link:",
-          linkTo:"https://adus.org.br/fale-conosco/"
-        },
-        {
-          img:"",
-          title:"Adus",
-          endereco:"Endereço: R. da Glória, 900 – Liberdade"
-        }
-      ]
+      img:"",
+      title:"Adus",
+      desc:"O Adus oferece cursos de portugês, capacitação e geração de renda e presta orientação jurídica.O atendimento da orientação jurídica é prestado pessoalmente e via e-mail e as situações que necessitem de litígios administrativos ou judiciais são encaminhadas para órgão públicos e instituições privadas adequadas para a proteção do direito eventualmente violado.                                  Para realizar o agendamento da aulas em São Paulo ou marcar atendimento online (outras cidades), acesse o link:",
+      linkTo:"https://adus.org.br/fale-conosco/"
+    },
+    {
+      img:"",
+      title:"Adus",
+      endereco:"Endereço: R. da Glória, 900 – Liberdade"
+    }
+  ]
+
+  br=[
+    {
+      img:"",
+      title:"Adus",
+      desc:"O Adus oferece cursos de portugês, capacitação e geração de renda e presta orientação jurídica.O atendimento da orientação jurídica é prestado pessoalmente e via e-mail e as situações que necessitem de litígios administrativos ou judiciais são encaminhadas para órgão públicos e instituições privadas adequadas para a proteção do direito eventualmente violado.                                  Para realizar o agendamento da aulas em São Paulo ou marcar atendimento online (outras cidades), acesse o link:",
+      linkTo:"https://adus.org.br/fale-conosco/"
+    },
+    {
+      img:"",
+      title:"Adus",
+      endereco:"Endereço: R. da Glória, 900 – Liberdade"
     }
   ]
 
