@@ -11,5 +11,5 @@ input{
     @apply p-2
 }
 button{
-    @apply p-2 rounded-md text-center border-2 text-brand-900 border-brand-900 hover:bg-brand-900 hover:text-brand-100 w-full
+    @apply p-2 rounded-md text-center border-2 text-brand-900 border-brand-900 hover:bg-brand-900 hover:text-brand-100 w-full mt-2
 }
