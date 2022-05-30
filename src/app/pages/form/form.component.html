@@ -6,21 +6,21 @@
       <p>Esse formulario tem o intuito de lhe conectar com ONG's e afins. saiba que ao preencher este formulario você está concordando com sei lá o q para sei lá o q</p>
     </div>
     <hr>
-    <form action="submit">
+    <form (submit)="onAdicionarCliente(clienteForm)" #clienteForm="ngForm">
       <label for="">Nome</label>
-      <input type="text" placeholder="Nome">
+      <input type="text" placeholder="Nome" name='nome' ngModel #nome="ngModel">
 
       <label for="">Email</label>
-      <input type="email" placeholder="Email">
+      <input type="email" placeholder="Email" name='email' ngModel #email="ngModel">
 
       <label for="">Telefone</label>
-      <input type="text" placeholder="Telefone">
+      <input type="text" placeholder="Telefone" name='tel' ngModel #tel="ngModel">
 
       <label for="">Nacionalidade</label>
-      <input type="text" placeholder="Nacionalidade">
+      <input type="text" placeholder="Nacionalidade" name='nacionalidade' ngModel #nacionalidade="ngModel">
 
       <label for="">Diga-me mais sobre ti</label>
-      <input type="text" placeholder="digite aqui...">
+      <input type="text" placeholder="digite aqui..." name='desc' ngModel #desc="ngModel">
 
       <button type="submit">Enviar</button>
     </form>
