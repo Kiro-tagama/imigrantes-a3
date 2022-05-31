@@ -8,7 +8,41 @@ import { NgForm } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
   constructor() { }
-    
+
+  onAdicionarCliente(form: NgForm) {
+    if (form.invalid) {
+      return;
+    }
+    this.adicionarCliente(
+      form.value.nome,
+      form.value.fone,
+      form.value.email,
+      form.value.nacionalidade,
+      form.value.dific,
+      form.value.desc,
+    )
+    form.resetForm()
+  }
+
+  adicionarCliente(nome: string, fone: number, email: string,nacionalidade:string,dific:string,desc:string) {
+    const cliente = {
+      nome: nome,
+      fone: fone,
+      email: email,
+      nacionalidade:nacionalidade,
+      dific:dific,
+      desc:desc,
+    };
+    console.log(cliente);
+    // this.clientes.push(cliente);
+    return cliente
+  }
+
+  
+  ngOnInit(): void {
+  }
+
+
   temas=[
     {nome:"Documentos"},
     {nome:"Moradia"},
@@ -1301,40 +1335,4 @@ export class FormComponent implements OnInit {
     "sigla" : "ZW"
   }
   ]
-
-  
-
-  onAdicionarCliente(form: NgForm) {
-    if (form.invalid) {
-      return;
-    }
-    this.adicionarCliente(
-      form.value.nome,
-      form.value.fone,
-      form.value.email,
-      form.value.nacionalidade,
-      form.value.dific,
-      form.value.desc,
-    )
-  }
-
-  adicionarCliente(nome: string, fone: number, email: string,nacionalidade:string,dific:string,desc:string) {
-    const cliente = {
-      nome: nome,
-      fone: fone,
-      email: email,
-      nacionalidade:nacionalidade,
-      dific:dific,
-      desc:desc,
-    };
-    console.log(cliente);
-    // this.clientes.push(cliente);
-
-    return cliente
-  }
-
-  
-  ngOnInit(): void {
-  }
-
 }
