@@ -4,9 +4,9 @@
 
 ### falta
   - conteudo
-  - icones da home
-  - arrumar a nav 
-  - backend 
+  - backend (axios in firebase)
+
+  falta passar do form para o back com axios, linkagem do post falhando
 ### using 
  - Phosphor (icons)
  - Tailwind (css)

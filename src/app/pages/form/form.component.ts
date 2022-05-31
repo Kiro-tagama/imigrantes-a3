@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+import axios from 'axios'
+
+console.log('isso',
+
+axios.get('http://localhost:3000')
+
+)
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -35,7 +42,12 @@ export class FormComponent implements OnInit {
     };
     console.log(cliente);
     // this.clientes.push(cliente);
-    return cliente
+    return axios({
+      method: "post",
+      url: 'http://localhost:3000/add',
+      data: cliente,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    });
   }
 
   
