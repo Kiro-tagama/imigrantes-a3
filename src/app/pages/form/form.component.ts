@@ -45,7 +45,14 @@ export class FormComponent implements OnInit {
     return axios({
       method: "post",
       url: 'http://localhost:3000/add',
-      data: cliente,
+      data: {
+        nome: nome,
+        fone: fone,
+        email: email,
+        nacionalidade:nacionalidade,
+        dific:dific,
+        desc:desc,
+      },
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     });
   }
