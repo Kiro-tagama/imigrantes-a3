@@ -24,6 +24,7 @@ app.get('/',async (req,res)=>{
 
 app.post('add',async (req,res)=>{
   const conteudo=req.body.data
+  
   const docRef = await addDoc(collection(db, "clientes"), {
     conteudo
   });
