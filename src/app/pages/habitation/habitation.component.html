@@ -10,6 +10,35 @@
   </div>
 
   <div>
+    <div class="sp"></div>
+    <div class="outrosEstados"></div>
     
+  </div>
+
+  <div class="box">
+    <h2>Aluguel</h2>
+    <p>Não existem impedimentos para os solicitantes de refúgio ou refugiados para alugar uma casa ou apartamento no Brasil. O aluguel deve ser feito através de um contrato de aluguel, no qual todos os direitos e deveres dos proprietários e inquilinos devem ser incluídos.
+    </p>
+    <p>Existem várias agências imobiliárias que operam no país. No entanto, um contrato feito diretamente com o proprietário é geralmente mais acessível.</p>
+    <p>Observe que os contratos de aluguel frequentemente requerem uma das garantias abaixo:
+    </p>
+    <ul>
+      <b>
+      <li><b>Indicação de um Fiador</b>: alguém que se comprometa a pagar o aluguel caso você não cumpra o pagamento;</li>
+      <li><b>Seguro de locação</b>: você pode contratar uma companhia de seguros como fiador;</li>
+      <li><b>Caução</b>: consiste em oferecer ao locador uma quantia de dinheiro a ser mantida como garantia até a rescisão do contrato.</li>
+    </ul>
+    <p>Para mais informações acesse o material criado pela Caritas Arquidiocesana de São Paulo: <a href="https://help.unhcr.org/brazil/wp-content/uploads/sites/8/2021/03/Direito-Imobiliario-para-refugiados.pdf" style="text-decoration:underline ;">Passo a passo para uma locação segura.</a></p>
+
+    <p><b>Alguns aplicativos que facilitam o aluguel são:</b></p>
+
+    <div class="flex flex-row flex-wrap justify-between">
+      <div class="cards" *ngFor="let item of aluguel">
+        <img src={{item.img}} alt="">
+        <h3>{{item.nome}}</h3>
+        <p>{{item.desc}}</p>
+        <a href={{item.link}}>Acesse</a>
+      </div>
+    </div>
   </div>
 </div>
