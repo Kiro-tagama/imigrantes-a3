@@ -1,3 +1,34 @@
 <div class="config-pd">
-  <p>health works!</p>
+  <h1>Saúde</h1>
+
+  <div class="box">
+    <p>A legislação brasileira assegura que os serviços do Sistema Único de Saúde (SUS) são universais, gratuitos e de acesso igualitário por todos os indivíduos presentes em território brasileiro. Todos os cidadãos, inclusive os solicitantes de refúgio e refugiados, têm direito de ser atendidos em qualquer unidade pública de saúde.</p>
+    
+    <div class="md:grid md:grid-cols-2 mb-[12px]">
+      <div class="">
+        <p>
+        Para tanto, você deve apresentar o seu <b>CPF e protocolo provisório ou RNE em qualquer hospital, clínica ou posto de saúde e solicitar o seu Cartão SUS</b>. Este cartão é gratuito e pode ser utilizado em qualquer unidade de saúde pública do território nacional.
+        </p>
+        <p>No Brasil, os pais têm a obrigação de vacinar seus filhos. As crianças filhas de solicitantes de refúgio e refugiados podem obter gratuitamente as vacinas em postos de saúde públicos. Para saber quais as vacinas que o seu filho deve tomar, consulte o calendário de vacinação nos postos de saúde da sua cidade.</p>
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Logo_SUS.svg/2560px-Logo_SUS.svg.png" alt="SUS" srcset="" width="400">
+      </div>
+    </div>
+
+    
+  </div>
+
+  <h2 class="font-bold">Números de emergência no Brasil</h2>
+
+  <div class="box">
+    <div *ngFor="let item of numeros ">
+      <div class="flex flex-row flex-wrap w-full font-bold text-lg">
+        <p class="w-[150px]">{{item.nome}}</p>
+        <p style="margin-left:5px ;">{{item.numero}}</p>
+      </div>
+        <p *ngIf="item.desc != null || undefined">{{item.desc}}</p>
+      <hr>
+    </div>
+  </div>
 </div>

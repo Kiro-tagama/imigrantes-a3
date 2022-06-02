@@ -1,15 +1,21 @@
 .box{
     @apply p-5 rounded-lg bg-[#f4f7f8] border-2 border-brand-900 max-w-[499px]
 }
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+  }
 hr{
     @apply my-2 h-0.5 bg-brand-900
 }
 form{
     @apply flex flex-col
 }
-input{
-    @apply p-2
+input,textarea{
+    @apply p-2 mt-2 bg-transparent border-[.8px] border-brand-700 focus:ring-2 focus:ring-brand-700 outline-none rounded-lg
 }
+textarea{ min-height: 50px;height: 100px;}
+label{font-weight: bold;}
 button{
     @apply p-2 rounded-md text-center border-2 text-brand-900 border-brand-900 hover:bg-brand-900 hover:text-brand-100 w-full mt-2
 }
