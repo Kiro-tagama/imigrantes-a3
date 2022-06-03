@@ -10,10 +10,45 @@
   </div>
 
   <div>
-    <div class="sp"></div>
-    <div class="outrosEstados"></div>
-    
+    <br>
+    <div class="sp">
+      <h2>SÃO PAULO</h2>
+      <div class="flex flex-row flex-wrap ">
+        <div class="card w-60 sm:max-w-80 m-1" *ngFor="let item of sp">
+          <h3>{{item.nome}}</h3>
+          <p>{{item.email}}</p>
+          <p>{{item.endereco}}</p>
+          <p>{{item.tel}}</p>
+          <div class="linksList">
+            <a href='mailto:{{item.email}}' *ngIf="item.site!= null"><i class="ph-paper-plane-tilt"></i></a>
+            <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="outrosEstados">
+      <div *ngFor="let item of estados">
+        <h2>{{item.estado}}</h2>
+        <div class="flex flex-row">
+          <div class="card w-60 sm:max-w-80 mx-1" >
+            <h3>{{item.nome}}</h3>
+            <p>{{item.email}}</p>
+            <p>{{item.endereco}}</p>
+            <p>{{item.tel}}</p>
+            <div class="linksList">
+              <a href='mailto:{{item.email}}' *ngIf="item.site!= null"><i class="ph-paper-plane-tilt"></i></a>
+              <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
   </div>
+  <br>
 
   <div class="box">
     <h2>Aluguel</h2>
@@ -22,20 +57,22 @@
     <p>Existem várias agências imobiliárias que operam no país. No entanto, um contrato feito diretamente com o proprietário é geralmente mais acessível.</p>
     <p>Observe que os contratos de aluguel frequentemente requerem uma das garantias abaixo:
     </p>
-    <ul>
+    <ul style="list-style-type:disc ; list-style-position: inside; margin-bottom: 12px;">
       <li><b>Indicação de um Fiador</b>: alguém que se comprometa a pagar o aluguel caso você não cumpra o pagamento;</li>
-      <li><b>Seguro de locação</b>: você pode contratar uma companhia de seguros como fiador;</li>
+      <li style="margin:8px 0"><b>Seguro de locação</b>: você pode contratar uma companhia de seguros como fiador;</li>
       <li><b>Caução</b>: consiste em oferecer ao locador uma quantia de dinheiro a ser mantida como garantia até a rescisão do contrato.</li>
     </ul>
     <p>Para mais informações acesse o material criado pela Caritas Arquidiocesana de São Paulo: <a href="https://help.unhcr.org/brazil/wp-content/uploads/sites/8/2021/03/Direito-Imobiliario-para-refugiados.pdf" style="text-decoration:underline ;">Passo a passo para uma locação segura.</a></p>
 
     <p><b>Alguns aplicativos que facilitam o aluguel são:</b></p>
 
-    <div class="flex flex-row flex-wrap justify-between">
-      <div class="cards" *ngFor="let item of aluguel">
-        <img src={{item.img}} alt="">
-        <h3>{{item.nome}}</h3>
-        <p>{{item.desc}}</p>
+    <div class="flex flex-row flex-wrap justify-evenly">
+      <div class="card w-60 sm:max-w-80" *ngFor="let item of aluguel">
+        <div>
+          <img src={{item.img}} alt="">
+          <h3>{{item.nome}}</h3>
+          <p>{{item.desc}}</p>
+        </div>
         <a href={{item.link}}>Acesse</a>
       </div>
     </div>
