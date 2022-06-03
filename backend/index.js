@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors"
 
 import {db} from './firebase.js'
 
@@ -10,23 +11,24 @@ import { collection, getDocs, setDoc, addDoc } from "firebase/firestore";
 
 
 const app = express()
-
+app.use(cors())
 app.listen(3000)
 
-app.get('/',async (req,res)=>{
-  const querySnapshot = await getDocs(collection(db, "clientes"));
-  querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${doc.data()}`);
-  });
+// app.get('/',async (req,res)=>{
+//   const querySnapshot = await getDocs(collection(db, "clientes"));
+//   querySnapshot.forEach((doc) => {
+//     console.log(`${doc.id} => ${doc.data()}`);
+//   });
   
-  res.status(200)
-})
+//   res.status(200)
+// })
 
-app.post('add',async (req,res)=>{
-  const conteudo=req.body.data
+app.post('/add',async (req,res)=>{
+  const conteudo=req.body
   
-  const docRef = await addDoc(collection(db, "clientes"), {
-    conteudo
-  });
-  console.log("Document written with ID: ", docRef.id);
+  console.log('conteuso',conteudo);
+  // const docRef = await addDoc(collection(db, "clientes"), {
+  //   conteudo
+  // });
+  // console.log("Document written with ID: ", docRef.id);
 })

@@ -54,7 +54,9 @@ export class FormComponent implements OnInit {
         desc:desc,
       },
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    });
+    })
+    .then((res)=>console.log(res))
+    .catch((err)=>console.log(err))
   }
 
   
