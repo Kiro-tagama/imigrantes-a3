@@ -12,7 +12,8 @@ import { collection, getDocs, setDoc, addDoc } from "firebase/firestore";
 
 const app = express()
 app.use(cors())
-app.listen(3000)
+app.use(express.urlencoded({ extended: true }));
+app.listen(process.env.PORT || 3000)
 
 // app.get('/',async (req,res)=>{
 //   const querySnapshot = await getDocs(collection(db, "clientes"));
@@ -26,9 +27,9 @@ app.listen(3000)
 app.post('/add',async (req,res)=>{
   const conteudo=req.body
   
-  console.log('conteuso',conteudo);
-  // const docRef = await addDoc(collection(db, "clientes"), {
-  //   conteudo
-  // });
-  // console.log("Document written with ID: ", docRef.id);
+  console.log('conteudo',conteudo);
+  const docRef = await addDoc(collection(db, "clientes"),
+    conteudo
+  );
+  console.log("Document written with ID: ", docRef.id);
 })

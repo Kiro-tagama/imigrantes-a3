@@ -32,7 +32,7 @@ export class FormComponent implements OnInit {
   }
 
   adicionarCliente(nome: string, fone: number, email: string,nacionalidade:string,dific:string,desc:string) {
-    const cliente = {
+    const cliente:any = {
       nome: nome,
       fone: fone,
       email: email,
@@ -42,19 +42,16 @@ export class FormComponent implements OnInit {
     };
     console.log(cliente);
     // this.clientes.push(cliente);
-    return axios({
-      method: "post",
-      url: 'http://localhost:3000/add',
-      data: {
-        nome: nome,
-        fone: fone,
-        email: email,
-        nacionalidade:nacionalidade,
-        dific:dific,
-        desc:desc,
-      },
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    })
+
+    let bodyFormData = new URLSearchParams();
+        for (let key in cliente)
+            bodyFormData.append(key, cliente[key]);
+        return axios({
+            method: "post",
+            url: 'http://localhost:3000/add',
+            data: bodyFormData,
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        })
     .then((res)=>console.log(res))
     .catch((err)=>console.log(err))
   }
