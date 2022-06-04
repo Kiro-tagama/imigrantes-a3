@@ -20,7 +20,7 @@
           <p>{{item.endereco}}</p>
           <p>{{item.tel}}</p>
           <div class="linksList">
-            <a href='mailto:{{item.email}}' *ngIf="item.site!= null"><i class="ph-paper-plane-tilt"></i></a>
+            <a href='mailto:{{item.email}}' *ngIf="item.email != null"><i class="ph-paper-plane-tilt"></i></a>
             <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
           </div>
         </div>
@@ -39,7 +39,7 @@
             <p>{{item.endereco}}</p>
             <p>{{item.tel}}</p>
             <div class="linksList">
-              <a href='mailto:{{item.email}}' *ngIf="item.site!= null"><i class="ph-paper-plane-tilt"></i></a>
+              <a href='mailto:{{item.email}}' *ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a>
               <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
             </div>
           </div>

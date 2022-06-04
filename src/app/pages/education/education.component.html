@@ -66,12 +66,14 @@
       </mat-expansion-panel>
       
       <hr>
-       <!-- esse -->
-      <!-- <mat-expansion-panel  hideToggle >
+
+      <mat-expansion-panel  hideToggle >
         <mat-expansion-panel-header class="py-2 h-20">
           <mat-panel-title class="flex flex-row justify-between">
             <div class="titulo">
-               
+              <h2>
+                Cursos presenciais
+              </h2>
             </div>
             <mat-icon class="mt-[5px]">
               <svg width="25" height="20" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,12 +84,125 @@
           
         </mat-expansion-panel-header>
   
-        <div>
+        <div class="presenciais">
+          <!-- aqui -->
+          <h2>SÃO PAULO</h2>
+          <div class="areaCards">
+            <div class="card" *ngFor="let item of sp" style="width:100% ;min-width:auto;max-width:auto">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.nome}}</h3>
+                <p>{{item.desc}}</p>
+                <p>{{item.desc2}}</p>
+                <p>{{item.Endereco}}</p>
+                <p>{{item.tel}}</p>
+                <p>{{item.email}}</p>
+              </div>
+              <div class="linksList">
+                <a href="https://api.whatsapp.com/send?phone=55{{item.WhatsApp}}" *ngIf="item.WhatsApp!= null"><i class="ph-whatsapp-logo"></i></a>
+                <a href="mailto:{{item.email}}"*ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a>
+                <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <h2>MANAUS</h2>
+          <div class="areaCards">
+            <div class="card" *ngFor="let item of manaus" style="width:100% ;min-width:auto;max-width:auto">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.nome}}</h3>
+                <p>{{item.Endereco}}</p>
+                <p>{{item.tel}}</p>
+                <p>{{item.email}}</p>
+              </div>
+              <div class="linksList">
+                <a href="mailto:{{item.email}}"*ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a>
+                <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr>
           
+          <h2>PORTO ALEGRE</h2>
+          <div class="areaCards">
+            <div class="card" *ngFor="let item of portoAlegre" style="width:100% ;min-width:auto;max-width:auto">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.nome}}</h3>
+                <p>{{item.desc}}</p>
+                <p>{{item.Endereco}}</p>
+                <p>{{item.tel}}</p>
+                <p>{{item.email}}</p>
+              </div>
+              <div class="linksList">
+                <a href="https://api.whatsapp.com/send?phone=55{{item.WhatsApp}}" *ngIf="item.WhatsApp!= null"><i class="ph-whatsapp-logo"></i></a>
+                <a href="mailto:{{item.email}}"*ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a>
+                <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          <h2>BOA VISTA</h2>
+          <div class="areaCards">
+            <div class="card" *ngFor="let item of bv" style="width:100% ;min-width:auto;max-width:auto">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.nome}}</h3>
+                <p>{{item.desc}}</p>
+                <p>{{item.Endereco}}</p>
+              </div>
+              <div class="linksList">
+                <!-- <a href="" *ngIf="item.WhatsApp!= null"><i class="ph-whatsapp-logo"></i></a>
+                <a href="mailto:{{item.email}}"*ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a> -->
+                <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr> 
+          <h2>PACARAIMA</h2>
+          <div class="areaCards">
+            <div class="card" *ngFor="let item of pacaraima" style="width:100% ;min-width:auto;max-width:auto">
+              <div>
+                <img src={{item.img}} alt="" srcset="">
+                <h3>{{item.nome}}</h3>
+                <p>{{item.desc}}</p>
+                <p>{{item.Endereco}}</p>
+              </div>
+              <!-- <div class="linksList">
+                <a href="" *ngIf="item.WhatsApp!= null"><i class="ph-whatsapp-logo"></i></a>
+                <a href="mailto:{{item.email}}"*ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a>
+                <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+              </div> -->
+            </div>
+          </div>
+          <hr>
+          <div *ngFor="let item of estado">
+            <h2>{{item.id}}</h2>
+            <div class="areaCards">
+              <div class="card" style="width:100% ;min-width:auto;max-width:auto">
+                <div>
+                  <img src={{item.img}} alt="" srcset="">
+                  <h3>{{item.nome}}</h3>
+                  <p>{{item.desc}}</p>
+                  <p>{{item.Endereco}}</p>
+                  <p>{{item.tel}}</p>
+                  <p>{{item.email}}</p>
+                </div>
+                <div class="linksList">
+                <a href="https://api.whatsapp.com/send?phone=55{{item.WhatsApp}}" *ngIf="item.WhatsApp!= null"><i class="ph-whatsapp-logo"></i></a>
+                <a href="mailto:{{item.email}}"*ngIf="item.email!= null"><i class="ph-paper-plane-tilt"></i></a>
+                <a href={{item.site}} *ngIf="item.site!= null"><i class="ph-globe"></i></a>
+              </div>
+              </div>
+            </div>
+            <hr>
+          </div>
         </div>
       </mat-expansion-panel>
       
-      <hr> -->
+      <hr>
 
       <mat-expansion-panel  hideToggle >
         <mat-expansion-panel-header class="py-2 h-20">
@@ -133,206 +248,7 @@
 
     </mat-accordion>
     
-    
-    <!-- <h2>
-      Cursos presenciais
-    </h2>
-    <div class="">
-      <a href="mailto:caritassp@caritassp.org.br">Send email</a>
-      
-      <div>
-        <h2>
-        SÃO PAULO
-        </h2>
-        <div class="areaCards">
-          <div class="card" *ngFor="let item of sp" style="width:100% ;min-width:auto;max-width:auto">
-            <div>
-              <img src={{item.img}} alt="" srcset="">
-              <h3>{{item.title}}</h3>
-              <p>{{item.desc}}</p>
-            </div>
-            <a href={{item.linkTo}} >
-              Veja
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h2>
-        SÃO PAULO
-        </h2>
-        <div class="areaCards">
-          <div class="card" *ngFor="let item of sp" style="width:100% ;min-width:auto;max-width:auto">
-            <div>
-              <img src={{item.img}} alt="" srcset="">
-              <h3>{{item.title}}</h3>
-              <p>{{item.desc}}</p>
-            </div>
-            <a href={{item.linkTo}} >
-              Veja
-            </a>
-          </div>
-        </div>
-      </div>
-      
-    </div> -->
-
-    
-    
   </div>
 
 
 </div>
-
-<!-- 
-  
-  sp,br,critiba,flor,manaus,pa,rj,bv
-
-CURSOS PRESENCIAIS
-
-
-SÃO PAULO
-
-(link da imagem: https://adus.org.br/projetos/aulas-de-portugues/ )
-O Adus oferece cursos de portugês, capacitação e geração de renda e presta orientação jurídica.O atendimento da orientação jurídica é prestado pessoalmente e via e-mail e as situações que necessitem de litígios administrativos ou judiciais são encaminhadas para órgão públicos e instituições privadas adequadas para a proteção do direito eventualmente violado.
-Para realizar o agendamento da aulas em São Paulo ou marcar atendimento online (outras cidades), acesse o link:
-Adus:https://adus.org.br/fale-conosco/
-
-(link da imagem: https://compassiva.org.br/) 
-Compassiva 
-Endereço: R. da Glória, 900 – Liberdade
-WhatsApp: (11)97512-0307 ou (11)93730-4461.
-Acesse: https://compassiva.org.br/lar/ 
-
-
-
-
-
-
-
-
-Caritas Arquidiocesana de São Paulo – Serviço de Acolhida e Orientação para Refugiados 
-Endereço: Rua José Bonifácio, nº107, 1º andar – Centro
-WhatsApp: +55 11 97630-8023
-Email: caritassp@caritassp.org.br
-De segunda a sexta-feira, das 08h30 às 17h30.
-
-(link da imagem:https://visaomundial.org.br/ )
-VISÃO MUNDIAL
-WhatsApp: (11) 99427-9660
-Acesse: https://visaomundial.org.br/
-
-
-(link da img: https://missaonspaz.org/sand/ )
-MISSÃO PAZ
-Endereço: Rua Glicério, 225 – Liberdade, São Paulo
-Telefone: (11) 3340-6950
-Acesse: https://missaonspaz.org/sand/cursos-de-portugues/ 
-
- 
-
-
-BibliASPA
-Endereço: Rua Baronesa de Itu, 639, Santa Cecília, São Paulo (SP)
-Telefone: (11) 99609-3188
-
-
-BRASÍLIA
-
-(link da imagem:https://www.migrante.org.br/ )
-IMDH 
-Oferece cursos de português e também é local de inscrição para outros cursos de línguas, contudo com a pandemia, o levantamento de cursos disponíveis está sendo feito constantemente, por isso, caso tenha interesse, contate o IMDH.
-E-mail: imdh@migrante.org.br
-Telefones: (61) 3340-2689 e 3447-8043
-WhatsApp: (61) 98210-5085.
-Acesse:https://www.migrante.org.br/ 
-
-
-CURITIBA
-
-(link da imagem:https://celin.ufpr.br/informacoes-sobre-inscricoes-para-os-cursos-de-portugues-para-estrangeiros/ )
-Português para Estrangeiros – Celin
-Endereço: Rua Dr. Faivre, n° 405, 4º andar – Ed. D. Pedro II.
-Telefone: +55 (41) 3360-5101 / 3360-5267
-Acesse:https://celin.ufpr.br/informacoes-sobre-inscricoes-para-os-cursos-de-portugues-para-estrangeiros/
- 
-FLORIANÓPOLIS 
-
-(link img: https://circulosdehospitalidade.org/ )
-Círculos de hospitalidade 
-Redes sociais: @circulosdehospitalidade
-E-mail: contato@circulosdehospitalidade.org
-WhatsApp: (48) 99638-0528
-Acesse: https://circulosdehospitalidade.org/projetos/ 
- 
-MANAUS
-
-(link da img:https://adra.org.br/projetos/care/ )
-CARE (Centro de Apoio e Referência a Refugiados e Migrantes) 
-Endereço: Av. Maués, 120 – Cachoeirinha
-E-mail: nucleo.manaus@adra.org.br
-Telefone: (92) 3342-6531 (92) 99303-7757 (Whatsapp)
-Acesse: https://adra.org.br/projetos/care/ 
- 
-
-(link img: https://arquidiocesedemanaus.org.br/ )
-Cáritas Arquiodicesana de Manaus 
-Endereço: Rua Joaquim Nabuco, 1023 – Centro
-E-mail: caritasarquimanaus@gmail.com
-Telefones: (92) 99292-4472 / (92) 3212-9030
-Acesse: https://arquidiocesedemanaus.org.br/laicato/caritas-arquidiocesana-de-manaus/ 
- 
-
-(link img:https://sjmrbrasil.org/ )
-SJMR (Serviço Jesuíta a Migrantes e Refugiados) 
-Endereço: Av. Joaquim Nabuco, 1023 – Centro
-E-mail: comunicacao@sjmrbrasil.org
-Telefone: (92) 99157-6097
-Acesse: https://sjmrbrasil.org/contato/ 
-
-PORTO ALEGRE
-
-(link img: https://cibaimigracoes.org/ )
-Cibai Migrações
-No momento as aulas estão sendo online.
-Endereço: Rua Dr Barros Cassal, 220 – Floresta
-E-mail: portuguescibai@gmail.com ou conexaoportugues@cibaimigracoes.org
-WhatsApp: 51 9 9222 3032
-Acese:https://cibaimigracoes.org/cursos-de-capacitacao/ 
- 
-
-(link img:https://sjmrbrasil.org/ )
-SJMR (Serviço Jesuíta a Migrantes e Refugiados) 
-Endereço: Rua General Caldwell, 651, no bairro Menino Deus – Porto Alegre (RS)
-E-mail: atendimentopoa@sjmrbrasil.org
-Telefone: +55 51 3254-0140
-Whatsapp: +55 51 9 9995-5573
-Acesse:  https://sjmrbrasil.org/contato/ 
- 
-RIO DE JANEIRO
-
-(link img: http://www.caritas-rj.org.br/ )
-Caritas Arquidiocesana do Rio de Janeiro
-Endereço: Rua São Francisco Xavier, nº483 – Maracanã
-Whatsapp: (21) 97228-1178
-Acesse:
-http://www.caritas-rj.org.br/curso-de-portugues-para-refugiados.html 
- 
-BOA VISTA
-
-(link img:https://www.avsibrasil.org.br/ )
-AVSI – Para residentes dos abrigos da Operação Acolhida geridos pela AVSI, buscar equipes de Meios de Vida do seu abrigo.
-Entre em contato: https://www.avsibrasil.org.br/contato/ 
- 
-
-(link da imagem:https://visaomundial.org.br/ )
-Visão Mundial – Informações sobre cursos na sede da ADRA 
-Endereço: Rua Belarmino F Magalhães, 1584 – Tancredo Neves, Boa Vista – RR, 69313-485) ou no PTRIG Boa Vista (Avenida Brasil, bairro 13 de Setembro, Boa Vista, Roraima / CEP 69308-050 )
-PACARAIMA
-IMDH Solidário – encaminhamento para cursos de português 
-Endereço: R. Uraricoera, 671 – Bairro São Vicente CEP 69303-453 – Boa Vista-RR.
- 
-CCR, Centro de Capacitação e Referência de Pacaraima 
-Endereço: Rua Um, número 289 – Centro, Pacaraima
- -->

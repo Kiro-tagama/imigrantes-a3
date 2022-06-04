@@ -8,6 +8,7 @@ mat-expansion-panel{
   box-shadow: none !important;
 }
 img{
+  object-fit: cover;
   @apply w-full h-auto mb-2
 }
 hr{
@@ -23,7 +24,23 @@ hr{
 .box{
   @apply p-5 rounded-lg bg-[#f4f7f8] my-2
 }
-
+.presenciais .card{
+  @apply min-w-[200px] max-w-sm
+}
+.presenciais .areaCards{
+  @apply flex flex-row
+}
+.linksList{
+  @apply flex flex-row justify-around
+}
+.linksList i{
+  @apply text-3xl
+}
+.linksList a{
+  width: 45px !important;
+  height: 45px;
+  @apply flex justify-center items-center 
+}
 .areaCards{
   @apply grid grid-cols-2 grid-flow-row gap-2 justify-items-center
 }
@@ -34,7 +51,7 @@ hr{
 .card h3{
   @apply font-bold text-center text-xl
 }
-.card a{
+.card a, .linksList a{
   @apply p-2 rounded-md text-center border-2 text-brand-900 border-brand-900 hover:bg-brand-900 hover:text-brand-100 w-full font-medium text-base
 }
 h2{font-weight: bold;}
