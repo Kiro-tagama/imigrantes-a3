@@ -1,0 +1,20 @@
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
+h2{font-weight: bold;}
+.box{
+  @apply p-5 rounded-lg bg-[#f4f7f8] my-2
+}
+
+.oportunidades{
+  @apply flex flex-col justify-between items-center
+  md:grid grid-cols-2
+}
+.oportunidades div{
+  @apply w-full h-full p-2 flex flex-col justify-between mb-2 md:p-3
+}
+
+.oportunidades div a{
+  @apply p-2 rounded-md text-center border-2 text-brand-900 border-brand-900 hover:bg-brand-900 hover:text-brand-100 w-full font-medium text-base
+}

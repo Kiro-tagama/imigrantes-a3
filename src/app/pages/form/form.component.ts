@@ -62,12 +62,13 @@ export class FormComponent implements OnInit {
 
 
   temas=[
-    {nome:"Documentos"},
     {nome:"Moradia"},
-    {nome:"Educação"},
     {nome:"Saúde"},
     {nome:"Emprego"},
-    {nome:"chip (sim-card)"},
+    {nome:"Alimentação"},
+    // {nome:"Documentos"},
+    // {nome:"Educação"},
+    // {nome:"chip (sim-card)"},
   ]
 
   // por favor não abra isso 
