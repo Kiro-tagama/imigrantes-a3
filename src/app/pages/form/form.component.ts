@@ -48,7 +48,7 @@ export class FormComponent implements OnInit {
             bodyFormData.append(key, cliente[key]);
         return axios({
             method: "post",
-            url: 'https://console.firebase.google.com/project/imigrantes-9d6df/overview/add',
+            url: 'imigrantes-9d6df.appspot.com/add',
             data: bodyFormData,
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
         })
