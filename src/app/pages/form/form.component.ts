@@ -48,7 +48,7 @@ export class FormComponent implements OnInit {
             bodyFormData.append(key, cliente[key]);
         return axios({
             method: "post",
-            url: 'http://localhost:3000/add',
+            url: 'https://imigrantes-9d6df.web.app/add',
             data: bodyFormData,
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
         })
@@ -56,7 +56,7 @@ export class FormComponent implements OnInit {
     .catch((err)=>console.log(err))
   }
 
-  
+
   ngOnInit(): void {
   }
 
@@ -71,7 +71,7 @@ export class FormComponent implements OnInit {
     // {nome:"chip (sim-card)"},
   ]
 
-  // por favor não abra isso 
+  // por favor não abra isso
   paises=[
     { "gentilico" : "afegãne",
     "nome_pais" : "Afeganistão",
