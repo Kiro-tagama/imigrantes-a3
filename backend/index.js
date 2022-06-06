@@ -20,16 +20,21 @@ app.listen(process.env.PORT || 3000)
 //   querySnapshot.forEach((doc) => {
 //     console.log(`${doc.id} => ${doc.data()}`);
 //   });
-  
+
 //   res.status(200)
 // })
 
 app.post('/add',async (req,res)=>{
   const conteudo=req.body
-  
+
   console.log('conteudo',conteudo);
-  const docRef = await addDoc(collection(db, "clientes"),
-    conteudo
-  );
+  res.send(Wid.create(
+    await addDoc(collection(db, "clientes"),
+      conteudo
+    )
+
+  ))
   console.log("Document written with ID: ", docRef.id);
 })
+
+exports.widgets=functions.https.onRequest(app);
