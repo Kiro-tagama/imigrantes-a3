@@ -28,7 +28,7 @@ app.post('/add',async (req,res)=>{
   const conteudo=req.body
 
   console.log('conteudo',conteudo);
-  res.send(Wid.create(
+  res.send(widgets.create(
     await addDoc(collection(db, "clientes"),
       conteudo
     )

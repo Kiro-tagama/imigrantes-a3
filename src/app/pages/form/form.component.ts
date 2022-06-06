@@ -48,7 +48,7 @@ export class FormComponent implements OnInit {
             bodyFormData.append(key, cliente[key]);
         return axios({
             method: "post",
-            url: 'imigrantes-9d6df.appspot.com/add',
+            url: 'https://us-central1-imigrantes-9d6df.cloudfunctions.net/dateadd',
             data: bodyFormData,
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
         })
