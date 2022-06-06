@@ -14,4 +14,36 @@
       Chip (sim-card)
     </h1>
   </div>
+
+  <div class="box">
+    <p>
+      Para se adquirir uma linha de telefonia, basta comprar um chip em um dos pontos de venda (farmácias, bancas de jornal, padarias, shopping center ) e depois fazer a ativação pelo próprio aparelho, informando o CPF e endereço, sem precisar se deslocar a uma loja física da operadora escolhida.
+    </p>
+    <p>
+      Abaixo, estão os sites das principais telefônicas do país:
+    </p>
+  </div>
+  <div class="sm:grid grid-cols-2 gap-2 lg:grid-cols-4">
+    <div class="card" *ngFor="let item of operadoras">
+      <img src={{item.img}} alt="" srcset="">
+      <h3>{{item.nome}}</h3>
+      <a href={{item.link}}>Acesse</a>
+    </div>
+  </div>
+  <div class="box">
+    <p>
+      O link abaixo mostra o ranking de satisfação com os serviços pré-pago e pós-pago das principais operadoras do Brasil, do site tecnoblog: <br>
+      <a href="https://tecnoblog.net/noticias/2020/02/12/anatel-revela-melhores-e-piores-operadoras-segundo-clientes/">tecnoblog</a>
+    </p>
+    <p>
+      Este é o ranking de satisfação com as principais telefônicas, de acordo com o site idinheiro: <br>
+      <a href="https://www.idinheiro.com.br/telecom/telefonia/qual-a-melhor-operadora-de-celular/">idinheiro</a>
+    </p>
+    <p>
+      Estes são os planos de telefonia mais baratos e acessíveis, de acordo com o site "melhores ofertas":<br>
+      <a href="https://melhoresofertas.net/operadoras/planos-celular/planos-moveis-mais-baratos/">melhores ofertas</a>
+    </p>
+    
+  </div>
+  
 </div>

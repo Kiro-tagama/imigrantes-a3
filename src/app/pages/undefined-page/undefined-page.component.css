@@ -6,3 +6,16 @@ h2{font-weight: bold;}
 .box{
   @apply p-5 rounded-lg bg-[#f4f7f8] my-2
 }
+.box a{text-decoration: underline;}
+.card{
+  @apply p-2 rounded-lg bg-[#f4f7f8] flex flex-col
+}
+.card img{
+  @apply h-28 object-cover rounded-lg
+}
+.card h3{
+  @apply font-bold text-center text-xl mt-2
+}
+.card a{
+  @apply p-2 rounded-md text-center border-2 text-brand-900 border-brand-900 hover:bg-brand-900 hover:text-brand-100 w-full font-medium text-base
+}
