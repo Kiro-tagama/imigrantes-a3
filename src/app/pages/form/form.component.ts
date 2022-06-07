@@ -14,6 +14,7 @@ axios.get('http://localhost:3000')
   styleUrls: ['./form.component.css','../../app.component.css']
 })
 export class FormComponent implements OnInit {
+  enviadoForm=0
   constructor() { }
 
   onAdicionarCliente(form: NgForm) {
@@ -29,6 +30,7 @@ export class FormComponent implements OnInit {
       form.value.desc,
     )
     form.resetForm()
+    this.enviadoForm+=1
   }
 
   adicionarCliente(nome: string, fone: number, email: string,nacionalidade:string,dific:string,desc:string) {
@@ -45,15 +47,15 @@ export class FormComponent implements OnInit {
 
     let bodyFormData = new URLSearchParams();
         for (let key in cliente)
-            bodyFormData.append(key, cliente[key]);
+        bodyFormData.append(key, cliente[key]);
         return axios({
-            method: "post",
-            url: 'https://southamerica-east1-imigrantes-9d6df.cloudfunctions.net/add',
-            data: bodyFormData,
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          method: "post",
+          url: 'https://southamerica-east1-imigrantes-9d6df.cloudfunctions.net/add',
+          data: bodyFormData,
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
         })
-    .then((res)=>console.log(res))
-    .catch((err)=>console.log(err))
+        .then((res)=>console.log(res))
+        .catch((err)=>console.log(err))
   }
 
 

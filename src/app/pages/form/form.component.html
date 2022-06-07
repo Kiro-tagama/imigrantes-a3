@@ -1,6 +1,6 @@
-<div class="config-pd flex justify-center items-center">
+<div class="config-pd flex justify-center items-center h-full">
   
-  <div class="box">
+  <div class="box" *ngIf="enviadoForm==0">
     <div>
       <div class="flex flex-row items-center mb-5">
         <svg width="71" height="77" viewBox="0 0 101 107" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,6 +49,18 @@
       <button type="submit" class="font-bold text-base">Enviar</button>
     </form>
     
+  </div>
+
+  <div class="h-[76vh] flex items-center" *ngIf="enviadoForm==1">
+    <div class="text-center">
+      <svg width="111" height="117" viewBox="0 0 101 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M98.4585 78.1658L50.7295 103.346L3 78.1658V28.181L50.7295 3L98.4585 28.181V78.1658Z" stroke="#13293D" stroke-width="5"/>
+        <path d="M90.96 74.3557L50.7302 95.5799L10.5 74.3557V32.2246L50.7302 11L90.96 32.2246V74.3557Z" fill="#13293D"/>
+        <path d="M68.875 41.625L46.125 64.375L34.75 53" stroke="#E8F1F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h1>Obrigado</h1>  
+      <a routerLink="/" style="text-decoration:underline" class="font-bold">Volte para o início</a>
+    </div>
   </div>
 </div>
 
