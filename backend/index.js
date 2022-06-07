@@ -3,7 +3,7 @@ import cors from "cors"
 
 import {db} from './firebase.js'
 
-import { collection, getDocs, setDoc, addDoc, deleteDoc, doc } from "firebase/firestore";
+import { updateDoc, collection, getDocs, setDoc, addDoc, deleteDoc, doc } from "firebase/firestore";
 
 
 const app = express()
@@ -39,6 +39,21 @@ app.put('/',(req,res)=>{
   //   dific: '',
   //   desc: ''
   // }
+  const id= req.body.id
+  const update={
+    nome: req.body.nome
+    // fone: req.body. 
+    // email: req.body. 
+    // nacionalidade: req.body. 
+    // dific: req.body. 
+    // desc: req.body. 
+  }
+
+  const washingtonRef = doc(db, "clientes", id);
+
+  // Set the "capital" field of the city 'DC'
+  await updateDoc(washingtonRef, update);
+
   console.log('up');
 })
 
