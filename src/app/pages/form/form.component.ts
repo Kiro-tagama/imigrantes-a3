@@ -50,7 +50,7 @@ export class FormComponent implements OnInit {
         bodyFormData.append(key, cliente[key]);
         return axios({
           method: "post",
-          url: 'https://southamerica-east1-imigrantes-9d6df.cloudfunctions.net/add',
+          url: 'http://localhost:3000/add',
           data: bodyFormData,
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
         })
